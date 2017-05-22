@@ -1,0 +1,7 @@
+#!/bin/bash
+
+OQ="$*"
+PARSED=`echo $OQ | tr ' ' '+'`
+
+ARGUMENT="?ie=ISO-8859-1&hl=es&source=hp&biw=&bih=&q=$PARSED&btnG=Buscar+con+Google&gbv=1"
+links "http://www.google.es$ARGUMENT"

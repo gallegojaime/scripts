@@ -1,0 +1,3 @@
+#!/bin/bash
+
+latex fil-ayer.tex
