@@ -1,0 +1,23 @@
+### scripts
+#
+#   A collection of hacked together scripts I use for common daily tasks.
+#   These are NOT production-worthy and are only uploaded here for informational
+### and (anti-)educational purposes. 
+  # DISCLAIMER: if I find out you are using these scripts on production environments,
+  # I will personally find you, slap you, and revoke your programmer's license.
+  # 
+### By Jaime Gallego.
+
+Listing:
+
+- jordi: nohup with stdout redirection to /dev/null. Takes one argument, the
+	program's path. Useful for keeping programs alive after terminal is closed
+	while silencing it as it's still open (aka, the program is jordihurtado'd).
+- conneth: use dhcpcd to connect to the Internet via my desktop's Ethernet.
+- goog: an attempt of making Google searches more directly with Links. Takes
+	arguments and uses them as the search query string.
+- scrls: lists files on the script directory.
+- scrmod: opens a script file, path relative to the script directory, in an
+	interactive editor. Takes name of script.
+- execperms: gives exec permissions to files on the script directory. 
+- procras: shows days left to several deadlines.

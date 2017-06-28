@@ -1,3 +1,0 @@
-#!/bin/bash
-
-mkayer; xdvi fil-ayer.dvi
