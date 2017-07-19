@@ -1,0 +1,13 @@
+#!/bin/bash
+
+brightnessfile='/sys/class/backlight/nv_backlight/brightness'
+regexp='^[0-9]+$'
+if [[ $1 =~ $regexp && $1 -ge 10 && $1 -le 100 ]]
+then
+	sudo bash -c "echo $1 > $brightnessfile"
+elif [[ $1 -lt 10 ]]
+then
+	echo 'backlight: Unsafely low brightness' 1>&2
+else
+	echo 'backlight: Bad argument' 1>&2
+fi
