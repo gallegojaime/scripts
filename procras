@@ -1,8 +1,0 @@
-#!/bin/bash
-echo "-- IMPORTANT DATES --"
-echo 
-echo " "$(expr '(' $(date -d 2017/5/29 +%s) - $(date +%s) + 86399 ')' / 86400) "days until Biology work & presentation"
-echo " "$(expr '(' $(date -d 2017/6/2 +%s) - $(date +%s) + 86399 ')' / 86400) "days until Philosophy essay"
-echo " "$(expr '(' $(date -d 2017/6/3 +%s) - $(date +%s) + 86399 ')' / 86400) "days until SAT Subjects"
-echo " "$(expr '(' $(date -d 2017/6/9 +%s) - $(date +%s) + 86399 ')' / 86400) "days until start of finals"
-echo

@@ -12,10 +12,11 @@ Listing:
 
 - backlight: brightness control for montesquieu laptop, ACPI control is broken.
 - conneth: use dhcpcd to connect to the Internet via my desktop's Ethernet.
-- execperms: gives exec permissions to files on the script directory. 
+- def: use StarDict to look up definitions in Longman, 1913 Webster, and other
+	installed dictionaries (personally I love the Jargon File)
 - goog: an attempt of making Google searches more directly with Links. Takes
 	arguments and uses them as the search query string.
-- jordi: nohup with stdout redirection to /dev/null. Takes one argument, the
-	program's path. Useful for keeping programs alive after terminal is closed
-	while silencing it as it's still open.
-- procras: shows days left to several deadlines.
+- jordi: nohup with stdout and stderr redirection to /dev/null. Takes one
+	argument, the program's path. Useful for keeping programs alive after
+	terminal is closed. 
+- lisp: call the lisp interpreter because "clisp" is, ugh, such an ugly command.
