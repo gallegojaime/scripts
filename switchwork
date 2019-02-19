@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if echo $PWD | grep -q "documents"; then
+	DIRECTORY=`echo $PWD | sed -e "s/documents/work/"`
+elif echo $PWD | grep -q "work"; then
+	DIRECTORY=`echo $PWD | sed -e "s/work/documents/"`
+fi
+
+if [ -d "$DIRECTORY" ]; then
+	cd $DIRECTORY
+else
+	echo "Directory not found" >&2
+fi
